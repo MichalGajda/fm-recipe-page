@@ -33,7 +33,7 @@ function App() {
               </li>
             </ul>
           </section>
-          <section className="recippe__ingredients">
+          <section className="recipe__ingredients">
             <h2>Ingredients</h2>
             <ul>
               <li>2-3 large eggs</li>
