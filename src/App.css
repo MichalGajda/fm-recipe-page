@@ -151,13 +151,16 @@ body {
   background-color: var(--color-stone-150);
 }
 
-.recipe__nutrition tr {
-  display: flex;
-  padding: var(--spacing-100) var(--spacing-400);
+.recipe__nutrition {
+  border-collapse: collapse;
 }
 
 .recipe__nutrition td {
-  flex: 0 0 50%;
+  width: 50%;
+}
+
+.recipe__nutrition td:first-child {
+  padding: var(--spacing-100) 0 var(--spacing-100) var(--spacing-400) ;
 }
 
 .recipe__nutrition tr:not(:last-child) {

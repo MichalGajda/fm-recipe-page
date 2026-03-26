@@ -81,8 +81,8 @@ function App() {
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-          <table>
-            <tbody className='recipe__nutrition'>
+          <table className='recipe__nutrition'>
+            <tbody>
               <tr>
                 <td className='typography-4'>Calories</td>
                 <td className='typography-4-bold'>277kcal</td>
