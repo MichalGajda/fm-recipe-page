@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react';
 
 type Props = {
   header: string;
@@ -7,7 +7,7 @@ type Props = {
 
 export default function RecipeSection({ header, children }: Props) {
   return (
-    <section className="recipe__section">
+    <section className='recipe__section'>
       <h2>{header}</h2>
       {children}
     </section>

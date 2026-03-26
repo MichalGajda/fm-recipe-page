@@ -1,27 +1,27 @@
-import "./App.css";
-import Footer from "./components/Footer";
-import RecipeList from "./components/RecipeList";
-import RecipeSection from "./components/RecipeSection";
-import { ingredients } from "./constants";
+import './App.css';
+import Footer from './components/Footer';
+import RecipeList from './components/RecipeList';
+import RecipeSection from './components/RecipeSection';
+import { ingredients } from './constants';
 
 function App() {
   return (
-    <main className="container">
-      <article className="recipe">
-        <header className="recipe__header">
+    <main className='container'>
+      <article className='recipe'>
+        <header className='recipe__header'>
           <img
-            src="image-omelette.jpeg"
-            alt="Image of Omelette"
-            className="recipe__image"
+            src='image-omelette.jpeg'
+            alt='Image of Omelette'
+            className='recipe__image'
           />
-          <h1 className="recipe__title">Simple Omelette Recipe</h1>
-          <p className="recipe__caption">
+          <h1 className='recipe__title'>Simple Omelette Recipe</h1>
+          <p className='recipe__caption'>
             An easy and quick dish, perfect for any meal. This classic omelette
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
           </p>
         </header>
-        <section className="recipe__preparation">
+        <section className='recipe__preparation'>
           <h3>Preparation time</h3>
           <ul>
             <li>
@@ -35,16 +35,16 @@ function App() {
             </li>
           </ul>
         </section>
-        <RecipeSection header="Ingredients">
-          <RecipeList listType="unordered">
+        <RecipeSection header='Ingredients'>
+          <RecipeList listType='unordered'>
             {ingredients.map((ingredient) => (
               <li key={ingredient}>{ingredient}</li>
             ))}
           </RecipeList>
         </RecipeSection>
-        <hr className="separator" />
-        <RecipeSection header="Instructions">
-          <RecipeList listType="ordered">
+        <hr className='separator' />
+        <RecipeSection header='Instructions'>
+          <RecipeList listType='ordered'>
             <li>
               <strong>Beat the eggs</strong>: In a bowl, beat the eggs with a
               pinch of salt and pepper until they are well mixed. You can add a
@@ -75,29 +75,29 @@ function App() {
             </li>
           </RecipeList>
         </RecipeSection>
-        <hr className="separator" />
-        <RecipeSection header="Nutrition">
-          <p className="typography-4">
+        <hr className='separator' />
+        <RecipeSection header='Nutrition'>
+          <p className='typography-4'>
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
           <table>
-            <tbody className="recipe__nutrition">
+            <tbody className='recipe__nutrition'>
               <tr>
-                <td className="typography-4">Calories</td>
-                <td className="typography-4-bold">277kcal</td>
+                <td className='typography-4'>Calories</td>
+                <td className='typography-4-bold'>277kcal</td>
               </tr>
               <tr>
-                <td className="typography-4">Carbs</td>
-                <td className="typography-4-bold">0g</td>
+                <td className='typography-4'>Carbs</td>
+                <td className='typography-4-bold'>0g</td>
               </tr>
               <tr>
-                <td className="typography-4">Protein</td>
-                <td className="typography-4-bold">20g</td>
+                <td className='typography-4'>Protein</td>
+                <td className='typography-4-bold'>20g</td>
               </tr>
               <tr>
-                <td className="typography-4">Fat</td>
-                <td className="typography-4-bold">22g</td>
+                <td className='typography-4'>Fat</td>
+                <td className='typography-4-bold'>22g</td>
               </tr>
             </tbody>
           </table>
