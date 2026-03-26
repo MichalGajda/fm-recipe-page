@@ -59,6 +59,7 @@ body {
   gap: var(--spacing-200);
   place-items: center;
   height: 100vh;
+  padding: var(--spacing-400);
 }
 
 .recipe {
@@ -68,7 +69,6 @@ body {
   padding: var(--spacing-500);
   display: grid;
   gap: var(--spacing-400);
-  margin: var(--spacing-400);
 }
 
 .recipe__image {
