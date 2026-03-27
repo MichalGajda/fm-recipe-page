@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-family-text), var(--font-family-header), sans-serif;
+  line-height: 1.5;
+}
+
+:root {
+  --color-stone-150: hsl(30, 18%, 87%);
+  --color-stone-600: hsl(30, 10%, 34%);
+  --color-stone-900: hsl(24, 5%, 18%);
+  --color-stone-100: hsl(30, 54%, 90%);
+
+  --color-brown-800: hsl(14, 45%, 36%);
+  --color-rose-50: hsl(330, 100%, 98%);
+  --color-rose-800: hsl(332, 51%, 32%);
+
+  --color-form-background: #fff;
+
+  --spacing-500: 4rem;
+  --spacing-400: 3.2rem;
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
+  --spacing-150: 1.2rem;
+  --spacing-100: 0.8rem;
+
+  --font-size-500: 4rem;
+  --font-size-350: 2.8rem;
+  --font-size-250: 2rem;
+  --font-size-200: 1.6rem;
+
+  --font-weight-normal: 400;
+  --font-weight-semi: 600;
+  --font-weight-bold: 700;
+
+  --font-family-header: "Young Serif"; 
+  --font-family-text: "Outfit";
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: var(--color-stone-100);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: var(--spacing-200);
+  place-items: center;
+  height: 100vh;
+  padding: var(--spacing-400);
+}
+
+.recipe {
+  width: min(73.6rem, 100%);
+  border-radius: 2rem;
+  background-color: var(--color-form-background);
+  padding: var(--spacing-500);
+  display: grid;
+  gap: var(--spacing-400);
+}
+
+.recipe__image {
+  border-radius: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.recipe__header {
+  display: grid;
+  gap: var(--spacing-300);
+}
+
+.recipe__preparation {
+  background-color: var(--color-rose-50);
+  border-radius: 1rem;
+  padding: var(--spacing-300);
+  display: grid;
+  gap: var(--spacing-200);
+}
+
+.recipe__preparation h3 {
+  color: var(--color-rose-800);
+}
+
+.recipe__preparation ul {
+  display: grid;
+  gap: var(--spacing-100);
+  color: var(--color-stone-600);
+  font-size: var(--font-size-200);
+}
+
+.recipe__section {
+  display: grid;
+  gap: var(--spacing-300);
+}
+
+.recipe__section h2 {
+  color: var(--color-brown-800);
+}
+
+.recipe__section ul,
+.recipe__section ol {
+  display: grid;
+  gap: var(--spacing-100);
+  color: var(--color-stone-600);
+  font-size: var(--font-size-200);
+}
+
+.typography-1 {
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-500);
+  line-height: 1;
+}
+
+.typography-2 {
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-350);
+  line-height: 1;
+}
+
+.typography-3 {
+  font-size: var(--font-size-250);
+  font-weight: var(--font-weight-semi);
+  line-height: 1;
+}
+
+.typography-4 {
+  color: var(--color-stone-600);
+  font-size: var(--font-size-200);
+}
+.typography-4-bold {
+  color: var(--color-stone-600);
+  font-size: var(--font-size-200);
+  font-weight: var(--font-weight-bold);
+}
+
+.separator {
+  border: 0;
+  height: 1px;
+  background-color: var(--color-stone-150);
+}
+
+.recipe__nutrition {
+  border-collapse: collapse;
+}
+
+.recipe__nutrition td {
+  width: 50%;
+}
+
+.recipe__nutrition td:first-child {
+  padding: var(--spacing-100) 0 var(--spacing-100) var(--spacing-400);
+}
+
+.recipe__nutrition tr:not(:last-child) {
+  border-bottom: 2px solid var(--color-stone-150);
+}
