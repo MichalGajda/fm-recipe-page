@@ -6,8 +6,8 @@ import { ingredients } from './constants';
 
 function App() {
   return (
-    <>
-      <main className='container'>
+    <div className='container'>
+      <main className='content'>
         <article className='recipe'>
           <header className='recipe__header'>
             <img
@@ -114,8 +114,8 @@ function App() {
         </article>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
- 
+
 export default App;

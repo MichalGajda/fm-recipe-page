@@ -65,8 +65,11 @@ body {
   padding: var(--spacing-400);
 }
 
-.recipe {
+.content {
   width: min(73.6rem, 100%);
+}
+
+.recipe {
   border-radius: 2rem;
   background-color: var(--color-form-background);
   padding: var(--spacing-500);

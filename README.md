@@ -48,7 +48,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### AI Collaboration
 
-- Used GitHub Copilot for code-review. 
+- Used GitHub Copilot for code-review.
 
 ## Author
 
