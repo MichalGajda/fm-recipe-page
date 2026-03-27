@@ -14,15 +14,15 @@ function App() {
             alt='Image of Omelette'
             className='recipe__image'
           />
-          <h1 className='recipe__title'>Simple Omelette Recipe</h1>
-          <p className='recipe__caption'>
+          <h1 className='typography-1'>Simple Omelette Recipe</h1>
+          <p className='typography-4'>
             An easy and quick dish, perfect for any meal. This classic omelette
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
           </p>
         </header>
         <section className='recipe__preparation'>
-          <h3>Preparation time</h3>
+          <h3 className='typography-3'>Preparation time</h3>
           <ul>
             <li>
               <strong>Total</strong>: Approximately 10 minutes

@@ -10,7 +10,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Young Serif", "Outfit", sans-serif;
+  font-family: "Outfit", "Young Serif", sans-serif;
   line-height: 1.5;
 }
 
@@ -33,14 +33,17 @@ html {
   --spacing-150: 1.2rem;
   --spacing-100: 0.8rem;
 
-  --font-size-big: 4rem;
-  --font-size-mid: 2.8rem;
-  --font-size-small: 2rem;
-  --font-size-tiny: 1.6rem;
+  --font-size-500: 4rem;
+  --font-size-350: 2.8rem;
+  --font-size-250: 2rem;
+  --font-size-200: 1.6rem;
 
   --font-weight-normal: 400;
   --font-weight-semi: 600;
   --font-weight-bold: 700;
+
+  --font-family-header: "Young Serif"; 
+  --font-family-text: "Outline";
 }
 
 img {
@@ -80,16 +83,6 @@ body {
   display: grid;
   gap: var(--spacing-300);
 }
-.recipe__title {
-  font-size: var(--font-size-big);
-  line-height: 1;
-}
-.recipe__caption {
-  color: var(--color-stone-600);
-  font-family: "Outfit";
-  font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-tiny);
-}
 
 .recipe__preparation {
   background-color: var(--color-rose-50);
@@ -97,21 +90,17 @@ body {
   padding: var(--spacing-300);
   display: grid;
   gap: var(--spacing-200);
-  font-family: "Outfit";
 }
 
 .recipe__preparation h3 {
   color: var(--color-rose-800);
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-semi);
-  line-height: 1;
 }
 
 .recipe__preparation ul {
   display: grid;
   gap: var(--spacing-100);
   color: var(--color-stone-600);
-  font-size: var(--font-size-tiny);
+  font-size: var(--font-size-200);
 }
 
 .recipe__section {
@@ -120,28 +109,42 @@ body {
 }
 
 .recipe__section h2 {
-  font-size: var(--font-size-mid);
-  line-height: 1;
   color: var(--color-brown-800);
 }
+
 .recipe__section ul,
 .recipe__section ol {
   display: grid;
   gap: var(--spacing-100);
   color: var(--color-stone-600);
-  font-size: var(--font-size-tiny);
-  font-family: "Outfit";
+  font-size: var(--font-size-200);
+}
+
+.typography-1 {
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-500);
+  line-height: 1;
+}
+
+.typography-2 {
+  font-family: var(--font-family-header);
+  font-size: var(--font-size-350);
+  line-height: 1;
+}
+
+.typography-3 {
+  font-size: var(--font-size-250);
+  font-weight: var(--font-weight-semi);
+  line-height: 1;
 }
 
 .typography-4 {
   color: var(--color-stone-600);
-  font-size: var(--font-size-tiny);
-  font-family: "Outfit";
+  font-size: var(--font-size-200);
 }
 .typography-4-bold {
   color: var(--color-stone-600);
-  font-size: var(--font-size-tiny);
-  font-family: "Outfit";
+  font-size: var(--font-size-200);
   font-weight: var(--font-weight-bold);
 }
 
@@ -160,7 +163,7 @@ body {
 }
 
 .recipe__nutrition td:first-child {
-  padding: var(--spacing-100) 0 var(--spacing-100) var(--spacing-400) ;
+  padding: var(--spacing-100) 0 var(--spacing-100) var(--spacing-400);
 }
 
 .recipe__nutrition tr:not(:last-child) {

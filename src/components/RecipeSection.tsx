@@ -8,7 +8,7 @@ type Props = {
 export default function RecipeSection({ header, children }: Props) {
   return (
     <section className='recipe__section'>
-      <h2>{header}</h2>
+      <h2 className='typography-2'>{header}</h2>
       {children}
     </section>
   );
