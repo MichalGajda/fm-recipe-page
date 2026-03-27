@@ -10,7 +10,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Outfit", "Young Serif", sans-serif;
+  font-family: var(--font-family-text), var(--font-family-header), sans-serif;
   line-height: 1.5;
 }
 
@@ -43,7 +43,7 @@ html {
   --font-weight-bold: 700;
 
   --font-family-header: "Young Serif"; 
-  --font-family-text: "Outline";
+  --font-family-text: "Outfit";
 }
 
 img {
