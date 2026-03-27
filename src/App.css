@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: clamp(0.3rem, 0.3rem + 0.2vw, 1rem);
+  font-size: clamp(0.5rem, 0.3rem + 0.2vw, 1rem);
   font-family: var(--font-family-text), var(--font-family-header), sans-serif;
   line-height: 1.5;
 }
@@ -26,8 +26,8 @@ html {
 
   --color-form-background: #fff;
 
-  --spacing-500: 4rem;
-  --spacing-400: 3.2rem;
+  --spacing-500: clamp(2rem, 1.5rem + 1vw, 4rem);
+  --spacing-400: clamp(2rem, 1rem + 4vw, 3.2rem);
   --spacing-300: 2.4rem;
   --spacing-200: 1.6rem;
   --spacing-150: 1.2rem;
@@ -160,7 +160,6 @@ body {
 }
 
 .recipe__nutrition {
-  gap: 10px;
   border-collapse: collapse;
 }
 
