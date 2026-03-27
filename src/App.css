@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: clamp(0.3rem, 0.3rem + 0.2vw, 1rem);
   font-family: var(--font-family-text), var(--font-family-header), sans-serif;
   line-height: 1.5;
 }
@@ -33,7 +33,7 @@ html {
   --spacing-150: 1.2rem;
   --spacing-100: 0.8rem;
 
-  --font-size-500: 4rem;
+  --font-size-500: clamp(2.8rem, 2.8rem + 1vw, 4rem);
   --font-size-350: 2.8rem;
   --font-size-250: 2rem;
   --font-size-200: 1.6rem;
@@ -61,7 +61,7 @@ body {
   grid-template-rows: 1fr auto;
   gap: var(--spacing-200);
   place-items: center;
-  height: 100vh;
+  min-height: 100dvh;
   padding: var(--spacing-400);
 }
 
@@ -92,7 +92,7 @@ body {
   gap: var(--spacing-200);
 }
 
-.recipe__preparation h3 {
+.recipe__preparation h2 {
   color: var(--color-rose-800);
 }
 
@@ -150,19 +150,28 @@ body {
 
 .separator {
   border: 0;
-  height: 1px;
+  height: 0.1rem;
   background-color: var(--color-stone-150);
 }
 
+.recipe__nutrition-caption {
+  text-align: start;
+  margin-bottom: var(--spacing-300);
+}
+
 .recipe__nutrition {
+  gap: 10px;
   border-collapse: collapse;
 }
 
+.recipe__nutrition th,
 .recipe__nutrition td {
   width: 50%;
 }
 
-.recipe__nutrition td:first-child {
+.recipe__nutrition th {
+  font-weight: var(--font-weight-normal);
+  text-align: start;
   padding: var(--spacing-100) 0 var(--spacing-100) var(--spacing-400);
 }
 

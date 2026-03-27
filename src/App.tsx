@@ -6,7 +6,7 @@ import { ingredients } from './constants';
 
 function App() {
   return (
-    <main className='container'>
+    <div className='container'>
       <article className='recipe'>
         <header className='recipe__header'>
           <img
@@ -22,7 +22,7 @@ function App() {
           </p>
         </header>
         <section className='recipe__preparation'>
-          <h3 className='typography-3'>Preparation time</h3>
+          <h2 className='typography-3'>Preparation time</h2>
           <ul>
             <li>
               <strong>Total</strong>: Approximately 10 minutes
@@ -77,26 +77,34 @@ function App() {
         </RecipeSection>
         <hr className='separator' />
         <RecipeSection header='Nutrition'>
-          <p className='typography-4'>
-            The table below shows nutritional values per serving without the
-            additional fillings.
-          </p>
           <table className='recipe__nutrition'>
+            <caption className='recipe__nutrition-caption typography-4'>
+              The table below shows nutritional values per serving without the
+              additional fillings.
+            </caption>
             <tbody>
               <tr>
-                <td className='typography-4'>Calories</td>
+                <th className='typography-4' scope='row'>
+                  Calories
+                </th>
                 <td className='typography-4-bold'>277kcal</td>
               </tr>
               <tr>
-                <td className='typography-4'>Carbs</td>
+                <th className='typography-4' scope='row'>
+                  Carbs
+                </th>
                 <td className='typography-4-bold'>0g</td>
               </tr>
               <tr>
-                <td className='typography-4'>Protein</td>
+                <th className='typography-4' scope='row'>
+                  Protein
+                </th>
                 <td className='typography-4-bold'>20g</td>
               </tr>
               <tr>
-                <td className='typography-4'>Fat</td>
+                <th className='typography-4' scope='row'>
+                  Fat
+                </th>
                 <td className='typography-4-bold'>22g</td>
               </tr>
             </tbody>
@@ -104,7 +112,7 @@ function App() {
         </RecipeSection>
       </article>
       <Footer />
-    </main>
+    </div>
   );
 }
 
