@@ -39,15 +39,16 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### What I learned
 
-I tried to make more fine-graied distribution of css classes. 
+- I tried to make more fine-grained distribution of css classes.
+- Logical representatives of margin, padding, width, height
 
 ### Continued development
 
-Try even more fine-grained css classes distribution next time.
+- Try even more fine-grained css classes distribution next time.
 
 ### AI Collaboration
 
-Used GitHub Copilot for code-review. 
+- Used GitHub Copilot for code-review. 
 
 ## Author
 
